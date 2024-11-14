@@ -6,7 +6,7 @@ import { navLinks } from '@/app/ui/Navbar/NavLinks';
 
 export default function Navbar() {
 
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
