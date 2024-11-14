@@ -1,9 +1,17 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./ui/Navbar/Navbar";
 
 export default function Home() {
   return (
     <div className="">
-      <Navbar/>
+      <header>
+        <Navbar/>
+      </header>
+      <main>
+ 
+      </main>
+      <footer>
+
+      </footer>
     </div>
   );
 }
