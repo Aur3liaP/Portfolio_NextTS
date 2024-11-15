@@ -1,13 +1,15 @@
+import Hero from "./ui/hero/Hero";
 import Navbar from "./ui/Navbar/Navbar";
 
 export default function Home() {
   return (
     <div className="">
-      <header>
+      <header className="">
         <Navbar/>
       </header>
-      <main>
- 
+
+      <main className="mt-[16vh] w-[90%] max-w-[1440px] mx-auto">
+        <Hero/>
       </main>
       <footer>
 
