@@ -1,4 +1,5 @@
 import Description from "./description";
+import Links from "./links";
 import Tags from "./tags";
 import Title from "./title";
 
@@ -7,7 +8,10 @@ export default function Hero() {
       <div className="">
         <Title/>
         <Description/>
-        <Tags/>
+        <div className="flex items-center justify-between mt-[5vh]">
+          <Links/>
+          <Tags/>
+        </div>
       </div>
     );
   }
