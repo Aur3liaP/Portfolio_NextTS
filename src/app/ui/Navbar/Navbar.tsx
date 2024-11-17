@@ -1,11 +1,10 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import Menu from "./Menu";
-import { navLinks } from '@/app/ui/Navbar/NavLinks';
+import { navLinks } from "@/app/ui/navbar/NavLinks";
 
 export default function Navbar() {
-
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
@@ -19,10 +18,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`h-16 flex justify-between items-center p-2 fixed top-0 w-full shadow-sm transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/60 backdrop-blur-sm' 
-          : 'bg-white'
+      className={`z-50 h-16 flex justify-between items-center p-2 fixed top-0 w-full shadow-sm transition-all duration-300 ${
+        isScrolled ? "bg-white/60 backdrop-blur-sm" : "bg-white"
       }`}
     >
       <p className="text-5xl font-fontTitle">AP</p>

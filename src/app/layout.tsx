@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import { montserratAlternates } from '@/app/ui/font';
-// import { glassAntiqua } from '@/app/ui/font';
 
 export const metadata: Metadata = {
   title: "Aurélia PIC",
@@ -15,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body
-        // className={`${glassAntiqua.variable} antialiased`}
-      >
+      <body>
         {children}
       </body>
     </html>

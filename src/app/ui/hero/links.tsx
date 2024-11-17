@@ -9,9 +9,9 @@ export const bioLinks = [
 
 export default function Links() {
     return (
-      <div className=''>
+      <div className='flex justify-between md:flex-col w-full'>
         {bioLinks.map((link, index) => (
-          <div key={index} className='flex justify-start items-center gap-16 mb-[2vh]'>
+          <div key={index} className='flex justify-start items-center gap-4 md:gap-16 mb-[2vh] md:mr-0'>
             <Image
                 src={link.src}
                 alt={link.name}

@@ -31,7 +31,7 @@ export default function Title() {
                 alt="spirale"
                 width={42}
                 height={24}
-                className="absolute right-0 bottom-0 z-[-1] sm:w-[100px] sm:h-[53px] md:w-[120px] md:h-[64px] lg:w-[168px] lg:h-[89px]"
+                className="absolute right-0 xl:right-[8%] bottom-0 z-[-1] sm:w-[100px] sm:h-[53px] md:w-[120px] md:h-[64px] lg:w-[168px] lg:h-[89px]"
                  />
             </div>
       </div>
