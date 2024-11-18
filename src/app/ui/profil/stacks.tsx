@@ -6,26 +6,36 @@ interface StackGroupProps {
     stacks: Stack[];
   }
 
-export default function Stacks() {
-  const stacksGroups = [
-    { title: 'Front-end', data: frontStacks },
-    { title: 'Back-end', data: backStacks },
-    { title: 'Autres', data: otherStacks },
-  ];
-
-  return (
-    <div className="pt-[10vh] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {stacksGroups.map((group, index) => (
-        <StackGroup key={index} title={group.title} stacks={group.data} />
-      ))}
-    </div>
-  );
-}
-
-function StackGroup({ title, stacks }: StackGroupProps) {
+  export default function Stacks() {
+    const stacksGroups = [
+      { title: 'Front-end', data: frontStacks },
+      { title: 'Back-end', data: backStacks },
+      { title: 'Autres', data: otherStacks },
+    ];
+  
     return (
-      <div className="border-4 border-[var(--clr-dark-purple)] rounded-2xl h-72 w-72 flex flex-col justify-between p-4 items-center">
+      <div className='relative'>
+        <div className="pt-[10vh] flex space-x-8 overflow-x-auto overscroll-auto lg:grid lg:grid-cols-3 lg:justify-items-center">
+          {stacksGroups.map((group, index) => (
+            <StackGroup key={index} title={group.title} stacks={group.data} />
+          ))}
+        </div>
+        <Image
+        src="/arrowScroll.svg"
+        alt="flèche defilement"
+        width={60}
+        height={60}
+        className="absolute -bottom-5 right-0 block lg:hidden"
+      />
+    </div>
+    );
+  }
+  
+  function StackGroup({ title, stacks }: StackGroupProps) {
+    return (
+      <div className="border-4 border-[var(--clr-dark-purple)] rounded-2xl h-72 w-72 flex-shrink-0 flex flex-col justify-between p-4 items-center">
         <h4 className="text-2xl font-semibold">{title}</h4>
+  
         <div className="h-[70%] grid grid-cols-3 gap-4 justify-items-center w-full">
           {stacks.map((stack, index) => (
             <div key={index} className="relative group">
@@ -45,4 +55,3 @@ function StackGroup({ title, stacks }: StackGroupProps) {
       </div>
     );
   }
-  
