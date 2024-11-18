@@ -1,6 +1,6 @@
 import Hero from "./ui/hero/Hero";
 import Navbar from "./ui/navbar/Navbar";
-import Stacks from "./ui/profil/stacks";
+import Profil from "./ui/profil/profil";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className="mt-[12vh] w-[90%] max-w-[1440px] mx-auto ">
         <Hero />
-        <Stacks/>
+        <Profil/>
       </main>
       <footer></footer>
     </div>
