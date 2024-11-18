@@ -11,6 +11,7 @@ export default {
       fontFamily: {
         fontTitle: ["var(--font-title)"],
         defaultFont: ["var(--default-font)", "sans-serif"], 
+        secondaryFont: ["var(--secondary-font)", "sans-serif"], 
       },
       colors: {
         background: "var(--background)",

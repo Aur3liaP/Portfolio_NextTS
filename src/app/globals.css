@@ -23,6 +23,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./ui/fonts/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300; 
+  font-style: normal;
+}
+
 :root {
   --background: #FBFAF8;
   --foreground: #171717;
@@ -31,6 +38,7 @@
   --clr-dark-purple : #704FE6 ;
   --default-font: "Montserrat Alternates", sans-serif;
   --font-title: "Glass Antiqua", cursive;
+  --secondary-font: "Montserrat", sans-serif;
 }
 
 /* @media (prefers-color-scheme: dark) {

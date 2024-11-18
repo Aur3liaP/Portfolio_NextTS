@@ -1,6 +1,7 @@
 import Hero from "./ui/hero/Hero";
 import Navbar from "./ui/navbar/Navbar";
 import Profil from "./ui/profil/profil";
+import Projects from "./ui/projects/projects";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <main className="mt-[12vh] w-[90%] max-w-[1440px] mx-auto ">
         <Hero />
         <Profil/>
+        <Projects/>
       </main>
       <footer></footer>
     </div>
