@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Menu from "./Menu";
-import { navLinks } from "@/app/ui/navbar/NavLinks";
+import { navLinks } from "../../lib/NavbarLinks";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);

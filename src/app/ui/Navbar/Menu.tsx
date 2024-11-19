@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { navLinks } from "@/app/ui/navbar/NavLinks";
+import { navLinks } from "@/app/lib/NavbarLinks";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);

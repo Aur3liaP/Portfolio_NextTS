@@ -4,7 +4,7 @@ export default function Tags() {
     return (
       <div className="relative max-w-[320px] hidden md:block">
             <Image
-                src="/tags round.svg"
+                src="/svg/tags round.svg"
                 alt="arrondi"
                 width={320}
                 height={266}

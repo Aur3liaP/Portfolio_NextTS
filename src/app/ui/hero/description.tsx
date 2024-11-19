@@ -5,10 +5,11 @@ export default function Description() {
       <div className="flex justify-end md:justify-center gap-8 ">
             <div className='text-center relative flex flex-col items-center justify-start gap-2 w-[70%] md:w-[50%] mt-[5vh] md:ml-12 lg:max-w-[30%] '>
                 <p className=''>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Après plus de 11 ans d'expérience dans le tourisme et la relation client, je me réoriente vers le développement web, un domaine qui m'a toujours fascinée. 
                 </p>
+                <p>Je suis actuellement à l'écoute de nouvelles opportunités en Alternance ou en CDI.</p>
                 <Image
-                src="/draw.svg"
+                src="/svg/draw.svg"
                 alt="décor gribouilli"
                 width={130}
                 height={58}

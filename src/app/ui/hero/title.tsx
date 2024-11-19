@@ -12,7 +12,7 @@ export default function Title() {
                 className='rounded-full sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px]'
             />
             <Image
-                src="/arrow.svg"
+                src="/svg/arrow.svg"
                 alt="flèche"
                 width={77}
                 height={69}
@@ -27,7 +27,7 @@ export default function Title() {
                     Développeuse Web
                 </h2>
                 <Image
-                src="/whool.svg"
+                src="/svg/whool.svg"
                 alt="spirale"
                 width={42}
                 height={24}

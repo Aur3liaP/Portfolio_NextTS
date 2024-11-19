@@ -9,7 +9,7 @@ export default function ContactCapsule({ type }: ContactCapsuleProps) {
     <div className="h-20 w-72 ring-4 ring-clrlightpurple rounded-full flex items-center justify-between">
       <div className="h-20 w-20 rounded-full bg-clrdarkpurple flex justify-center items-center">
         <Image
-          src={type === "mail" ? "/mail.svg" : "/telephone.svg"}
+          src={type === "mail" ? "/svg/mail.svg" : "/svg/telephone.svg"}
           alt=""
           width={35}
           height={35}

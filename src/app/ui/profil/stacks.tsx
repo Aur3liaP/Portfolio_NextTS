@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Stack, frontStacks, backStacks, otherStacks } from './stacksData';
+import { Stack, frontStacks, backStacks, otherStacks } from '../../lib/stacksData';
 
 interface StackGroupProps {
     title: string;
