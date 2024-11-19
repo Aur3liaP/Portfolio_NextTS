@@ -1,3 +1,4 @@
+import Contact from "./ui/contact/contact";
 import Hero from "./ui/hero/Hero";
 import Navbar from "./ui/navbar/Navbar";
 import Profil from "./ui/profil/profil";
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <Profil/>
         <Projects/>
+        <Contact/>
       </main>
       <footer></footer>
     </div>

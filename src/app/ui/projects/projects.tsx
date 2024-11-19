@@ -1,11 +1,10 @@
-import ProjectCarousel from "./projetCaroussel";
+import ProjectCarousel from "./projetCarousel";
 
 export default function Projects() {
     return (
-      <div className="pt-[10vh]">
-        <h3 className="font-fontTitle text-4xl sm:text-5xl pb-[10vh]" id="projets">Mes projets</h3>
+      <div className="">
+        <h3 className="font-fontTitle text-4xl sm:text-5xl py-[10vh]" id="projets">Mes projets</h3>
         <ProjectCarousel/>
- 
       </div>
     );
   }

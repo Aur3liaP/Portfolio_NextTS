@@ -27,13 +27,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <Image
         src={project.capture.src}
         alt={`Capture d'écran du projet ${project.projectName}`}
-        width={300}
+        width={270}
         height={145}
-        className="cursor-pointer"
+        className="cursor-pointer h-[145px]"
       />
 
-      <div className="w-full font-light text-sm">
-        <p>{project.description}</p>
+    <div className="w-full font-light text-sm h-[35%]">
+        <p className='h-[50%]'>{project.description}</p>
 
         <ul className="grid grid-cols-2 gap-2 list-disc list-inside justify-items-start mt-4">
           {project.skills.map((skill, index) => (
