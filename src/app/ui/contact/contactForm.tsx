@@ -15,7 +15,7 @@ export default function ContactForm() {
       return re.test(emailValidation);
     };
   
-    const handleSubmit = (event: React.FormEvent): void => {
+    const handleSubmit = async (event: React.FormEvent): Promise<void> => {
       event.preventDefault();
   
       if (!email || !message) {
@@ -33,16 +33,30 @@ export default function ContactForm() {
         hideInfoAfterDelay();
         return;
       }
-
-      
-  
-      setName("");
-      setEmail("");
-      setMessage("");
-      setBorderClass("");
-      setInfoMessage("Message envoyé avec succès !");
-      setInfoType("success");
-      hideInfoAfterDelay();
+      try {
+        const response = await fetch("/api/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
+        });
+    
+        if (response.ok) {
+          setInfoMessage("Message envoyé avec succès !");
+          setInfoType("success");
+          setName("");
+          setEmail("");
+          setMessage("");
+        } else {
+          setInfoMessage("Erreur lors de l'envoi du message.");
+          setInfoType("error");
+        }
+      } catch (error) {
+        console.error("Erreur :", error);
+        setInfoMessage("Erreur lors de l'envoi du message.");
+        setInfoType("error");
+      } finally {
+        hideInfoAfterDelay();
+      }
     };
   
     const handleReset = (): void => {
