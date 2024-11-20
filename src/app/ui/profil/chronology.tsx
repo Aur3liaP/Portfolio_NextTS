@@ -17,11 +17,11 @@ export default function Chronology() {
         </div>
       </div>
         <Image
-                src="/arrowScroll.svg"
+                src="/svg/arrowScroll.svg"
                 alt="flèche defilement"
                 width={60}
                 height={60}
-                className="absolute -bottom-5 right-0 block xl:hidden"
+                className="absolute -bottom-5 right-0 block lg:hidden"
               />
     </div>
     );

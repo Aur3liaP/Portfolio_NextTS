@@ -78,7 +78,7 @@ export default function ContactForm() {
   return (
     <div className="relative">
       <form
-        className="flex flex-col gap-6 w-72 md:w-96"
+        className="flex flex-col gap-6 w-72 lg:w-96"
         onSubmit={handleSubmit}
       >
         <div className="relative">

@@ -16,24 +16,36 @@ interface StackGroupProps {
     return (
       <div className='relative'>
         <div className="flex space-x-8 overflow-x-auto overscroll-auto lg:grid lg:grid-cols-3 lg:justify-items-center">
-          {stacksGroups.map((group, index) => (
-            <StackGroup key={index} title={group.title} stacks={group.data} />
-          ))}
+        {stacksGroups.map((group, index) => (
+          <StackGroup
+            key={index}
+            title={group.title}
+            stacks={group.data}
+            isCentral={index === 1}
+          />
+        ))}
         </div>
         <Image
-        src="/arrowScroll.svg"
+        src="/svg/arrowScroll.svg"
         alt="flèche defilement"
         width={60}
         height={60}
         className="absolute -bottom-5 right-0 block lg:hidden"
       />
+      <Image
+        src="/svg/rounds.svg"
+        alt="ronds"
+        width={100}
+        height={100}
+        className="absolute -bottom-4 right-0 translate-y-[110%]"
+      />
     </div>
     );
   }
   
-  function StackGroup({ title, stacks }: StackGroupProps) {
+  function StackGroup({ title, stacks, isCentral, }: StackGroupProps & { isCentral: boolean }) {
     return (
-      <div className="border-4 border-clrdarkpurple rounded-2xl h-72 w-72 flex-shrink-0 flex flex-col justify-between p-4 items-center">
+      <div className="border-4 border-clrdarkpurple rounded-2xl h-72 w-72 flex-shrink-0 flex flex-col justify-between p-4 items-center shadow-md relative">
         <h4 className="text-2xl font-semibold">{title}</h4>
   
         <div className="h-[70%] grid grid-cols-3 gap-4 justify-items-center w-full">
@@ -52,6 +64,15 @@ interface StackGroupProps {
             </div>
           ))}
         </div>
+        {isCentral && (
+        <Image
+          src="/svg/dots.svg"
+          alt="points"
+          width={50}
+          height={50}
+          className="absolute bottom-1 right-1"
+        />
+      )}
       </div>
     );
   }
