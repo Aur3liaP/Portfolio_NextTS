@@ -18,7 +18,8 @@ export default function Home() {
         <Projects/>
         <Contact/>
       </main>
-      <footer className="mt-[10vh] flex justify-center items-center h-14 top-0 w-full shadow-sm bg-white">
+      <footer className="mt-[10vh] flex flex-col justify-center items-center h-14 top-0 w-full shadow-sm bg-white">
+        <p className="tracking-wider">Merci d'être arrivé jusque là !</p>
         <p className="tracking-wider">© PIC Aurélia - 2024 - ❤️</p>
       </footer>
     </div>

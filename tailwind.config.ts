@@ -13,6 +13,9 @@ export default {
         defaultFont: ["var(--default-font)", "sans-serif"], 
         secondaryFont: ["var(--secondary-font)", "sans-serif"], 
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

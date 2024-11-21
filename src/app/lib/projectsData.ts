@@ -119,8 +119,8 @@ export const projectData: Project[] = [
     skills: ["REACT NATIVE", "EXPO","TYPESCRIPT", "NODE.JS","EXPRESS", "SQLITE"],
     links: [
       {
-        githubHref: "https://github.com/Aur3liaP/Hackathon2",
-        deployHref: "https://cyber-mart.netlify.app/",
+        githubHref: "https://github.com/Aur3liaP/PokedexCRUD-ReactNative",
+        deployHref: "none",
       },
     ],
     capture: {
@@ -138,7 +138,7 @@ export const projectData: Project[] = [
     links: [
       {
         githubHref: "https://github.com/Aur3liaP/Chemin-Montessori",
-        deployHref: "https://cyber-mart.netlify.app/",
+        deployHref: "none",
       },
     ],
     capture: {

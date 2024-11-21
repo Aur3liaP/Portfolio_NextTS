@@ -45,7 +45,7 @@ interface StackGroupProps {
   
   function StackGroup({ title, stacks, isCentral, }: StackGroupProps & { isCentral: boolean }) {
     return (
-      <div className="border-4 border-clrdarkpurple rounded-2xl h-72 w-72 flex-shrink-0 flex flex-col justify-between p-4 items-center shadow-md relative">
+      <div className="border-4 border-clrdarkpurple rounded-2xl h-72 w-72 flex-shrink-0 flex flex-col justify-between p-4 items-center shadow-md relative m-4 hover:scale-105 duration-300">
         <h4 className="text-2xl font-semibold">{title}</h4>
   
         <div className="h-[70%] grid grid-cols-3 gap-4 justify-items-center w-full">
