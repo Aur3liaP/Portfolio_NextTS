@@ -62,7 +62,7 @@ export const projectData: Project[] = [
     projectName: "L'UNIVERS DE BLIBLI",
     description:
       "Création d'un site esthétique et reposant sur l’univers des Studios Ghibli, alliant une bibliothèque et un espace immersif 3D menant à divers parallax et mini-jeux .",
-    skills: ["HTML", "CSS", "JAVASCRIPT","REACT", "API", "NODE.JS", "EXPRESS"],
+    skills: ["HTML", "CSS", "JAVASCRIPT","REACT", "API", "NODE.JS", "EXPRESS", "SPLINE"],
     links: [
       {
         githubHref: "https://github.com/Aur3liaP/L-univers-de-Blibli",

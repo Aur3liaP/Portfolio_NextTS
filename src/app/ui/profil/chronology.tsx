@@ -1,9 +1,21 @@
+'use client';
+
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import useAnimation from "../../hooks/useAnimation";
+
 import Image from 'next/image';
 import ChronologyZoom from "./chronologyZoom";
 
 export default function Chronology() {
+  const chronoRef = useRef(null);
+const { appear } = useAnimation();
+    useGSAP(() => {
+      appear(chronoRef.current);
+  }, []);
+
     return (
-    <div className='relative'>
+    <div className='relative' ref={chronoRef}>
       <div className="overflow-x-auto overscroll-auto">
         <div className="flex gap-[20%] justify-center ">
             <ChronologyZoom text={"Certification\n12/2024 🤞"}/>

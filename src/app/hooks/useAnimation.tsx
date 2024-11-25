@@ -1,43 +1,42 @@
+'use client';
+
 import { gsap } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+}
 
 const useAnimation = () => {
-  // Utilisation du Hook personnalisé sur le composant. Ex :
-  //   useGSAP(() => {
-  //     appear(".classeComposant");
-  // }, []);
-
   type AnimationFunction = (
-    elem: string | Element | null, 
+    elem: string | Element | null,
   ) => void;
 
-  const slideInTop: AnimationFunction = (elem) => {
-    if (!elem) return;
-    gsap.fromTo(
-      elem,
-      {
-        opacity: 0,
-        y: -200,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        delay: 0.4,
-        duration: 1,
-        scrollTrigger: {
-          trigger: elem,
-          start: "top 70%",
-          end: "bottom center",
-          markers: false,
-        },
-      }
-    );
-  };
+  // const slideInTop: AnimationFunction = (elem) => {
+  //   if (!elem) return;
+  //   gsap.fromTo(
+  //     elem,
+  //     {
+  //       opacity: 0,
+  //       y: -200,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       delay: 0.4,
+  //       duration: 1,
+  //       scrollTrigger: {
+  //         trigger: elem,
+  //         start: "top 70%",
+  //         end: "bottom center",
+  //         markers: false,
+  //       },
+  //     }
+  //   );
+  // };
 
-  const slideInLeft : AnimationFunction = (elem) => {
+  const slideInLeft: AnimationFunction = (elem) => {
     if (!elem) return;
     gsap.fromTo(
       elem,
@@ -48,7 +47,7 @@ const useAnimation = () => {
       {
         opacity: 1,
         x: 0,
-        delay: 0.4,
+        delay: 0.2,
         duration: 1,
         scrollTrigger: {
           trigger: elem,
@@ -60,7 +59,7 @@ const useAnimation = () => {
     );
   };
 
-  const slideInRight : AnimationFunction = (elem) => {
+  const slideInRight: AnimationFunction = (elem) => {
     if (!elem) return;
     gsap.fromTo(
       elem,
@@ -83,7 +82,7 @@ const useAnimation = () => {
     );
   };
 
-  const appear : AnimationFunction = (elem) => {
+  const appear: AnimationFunction = (elem) => {
     if (!elem) return;
     gsap.fromTo(
       elem,
@@ -92,8 +91,8 @@ const useAnimation = () => {
       },
       {
         opacity: 1,
-        delay: 0.4,
-        duration:  1,
+        delay: 0.2,
+        duration: 1,
         scrollTrigger: {
           trigger: elem,
           start: "top 70%",
@@ -105,7 +104,7 @@ const useAnimation = () => {
   };
 
   return {
-    slideInTop,
+    // slideInTop,
     slideInLeft,
     slideInRight,
     appear,

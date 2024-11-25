@@ -5,10 +5,17 @@ import ContactInfos from "./contactInfos";
 import Image from 'next/image';
 import { gsap } from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import useAnimation from "../../hooks/useAnimation";
 
 export default function Contact() {
+const contactRef = useRef(null);
+const { appear } = useAnimation();
+    useGSAP(() => {
+      appear(contactRef.current);
+  }, []);
+
   useGSAP(() => {
-    
       gsap.to(".whirl", {
         rotate: 360,
         repeat: -1,
@@ -20,7 +27,7 @@ export default function Contact() {
   }, []);
 
     return (
-      <div className="">
+      <div ref={contactRef}>
         <div className="relative py-[15vh] flex justify-between">
         <h3 className="font-fontTitle text-4xl sm:text-6xl" id="contact">Contactez-moi</h3>
         <Image

@@ -1,10 +1,22 @@
+'use client';
+
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import useAnimation from "../../hooks/useAnimation";
+
 import Chronology from "./chronology";
 import Stacks from "./stacks";
 import Image from 'next/image';
 
-export default function Profil() {
+export default function Profil() {  
+const profilRef = useRef(null);
+const { appear } = useAnimation();
+    useGSAP(() => {
+      appear(profilRef.current);
+  }, []);
+
     return (
-      <div className="">
+      <div ref={profilRef}>
         <div className="relative py-[15vh] inline-block">
           <h3 className="font-fontTitle text-4xl sm:text-6xl" id="profil">À propos de moi</h3>
           <Image
