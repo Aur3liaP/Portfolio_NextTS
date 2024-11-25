@@ -1,6 +1,6 @@
 import Contact from "./ui/contact/contact";
 import Hero from "./ui/hero/Hero";
-import Navbar from "./ui/navbar/Navbar";
+import Navbar from "./ui/Navbar/Navbar";
 import Profil from "./ui/profil/profil";
 import Projects from "./ui/projects/projects";
 import ScrollToTopButton from "./ui/ScrollToTopButton";
