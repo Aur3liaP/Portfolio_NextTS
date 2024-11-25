@@ -8,9 +8,20 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        fontTitle: ["var(--font-title)"],
+        defaultFont: ["var(--default-font)", "sans-serif"], 
+        secondaryFont: ["var(--secondary-font)", "sans-serif"], 
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        clryellow : "var(--clr-yellow)",
+        clrlightpurple : "var(--clr-light-purple)",
+        clrdarkpurple : "var(--clr-dark-purple)",
       },
     },
   },
