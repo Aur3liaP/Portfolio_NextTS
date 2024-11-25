@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Tags from "./tags";
+
 export const bioLinks = [
   {
     name: "Aur3liaP",
