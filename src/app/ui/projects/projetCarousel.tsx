@@ -24,19 +24,19 @@ export default function ProjectCarousel() {
       gsap.fromTo(
         carouselRef.current,
         { x: -100, opacity: 0 },
-        { x: 0, opacity: 1, duration: 1, ease: "power2.out" }
+        { x: 0, opacity: 1, duration: 1, ease: "power2.out" },
       );
     }
   }, [currentGroupIndex]);
 
   const nextGroup = () =>
     setCurrentGroupIndex(
-      (prevIndex) => (prevIndex + 1) % groupedProjects.length
+      (prevIndex) => (prevIndex + 1) % groupedProjects.length,
     );
   const prevGroup = () =>
     setCurrentGroupIndex(
       (prevIndex) =>
-        (prevIndex - 1 + groupedProjects.length) % groupedProjects.length
+        (prevIndex - 1 + groupedProjects.length) % groupedProjects.length,
     );
 
   return (

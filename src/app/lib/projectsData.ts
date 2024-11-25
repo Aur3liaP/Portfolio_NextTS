@@ -1,31 +1,30 @@
 export interface ProjectLink {
-    githubHref: string;
-    deployHref: string;
-  }
-  
-  export interface ProjectCapture {
-    src: string;
-  }
-  
-  export interface Project {
-    id: number;
-    title: string;
-    subtitle: string;
-    projectName: string;
-    description: string;
-    skills: string[];
-    links: ProjectLink[];
-    capture: ProjectCapture;
-  }
-  
+  githubHref: string;
+  deployHref: string;
+}
+
+export interface ProjectCapture {
+  src: string;
+}
+
+export interface Project {
+  id: number;
+  title: string;
+  subtitle: string;
+  projectName: string;
+  description: string;
+  skills: string[];
+  links: ProjectLink[];
+  capture: ProjectCapture;
+}
+
 export const projectData: Project[] = [
   {
     id: 1,
     title: "Projet de Groupe",
     subtitle: "Wild Code School",
     projectName: "LES AVENTURES DE SIR GALLUS",
-    description:
-      "Création d'un jeu narratif et interactif en HTML, CSS et JS.",
+    description: "Création d'un jeu narratif et interactif en HTML, CSS et JS.",
     skills: ["HTML", "CSS", "JAVASCRIPT"],
     links: [
       {
@@ -62,7 +61,16 @@ export const projectData: Project[] = [
     projectName: "L'UNIVERS DE BLIBLI",
     description:
       "Création d'un site esthétique et reposant sur l’univers des Studios Ghibli, alliant une bibliothèque et un espace immersif 3D menant à divers parallax et mini-jeux .",
-    skills: ["HTML", "CSS", "JAVASCRIPT","REACT", "API", "NODE.JS", "EXPRESS", "SPLINE"],
+    skills: [
+      "HTML",
+      "CSS",
+      "JAVASCRIPT",
+      "REACT",
+      "API",
+      "NODE.JS",
+      "EXPRESS",
+      "SPLINE",
+    ],
     links: [
       {
         githubHref: "https://github.com/Aur3liaP/L-univers-de-Blibli",
@@ -80,7 +88,7 @@ export const projectData: Project[] = [
     projectName: "CYBERMART",
     description:
       "Retour dans les années 90 avec la création d’un site de e-commerce à l'aide des technologies actuelles. ",
-    skills: ["HTML", "CSS", "JAVASCRIPT","REACT", "API", "NODE.JS", "EXPRESS"],
+    skills: ["HTML", "CSS", "JAVASCRIPT", "REACT", "API", "NODE.JS", "EXPRESS"],
     links: [
       {
         githubHref: "https://github.com/Aur3liaP/Hackathon2",
@@ -98,7 +106,7 @@ export const projectData: Project[] = [
     projectName: "Renardor's Revenge",
     description:
       "Création d’un jeu 2D de type Tower Defense sur 4 niveaux. Découverte complète de UNITY et du langage C#.",
-    skills: ["UNITY","C#"],
+    skills: ["UNITY", "C#"],
     links: [
       {
         githubHref: "https://github.com/Aur3liaP/Renardors-Revenge",
@@ -116,7 +124,14 @@ export const projectData: Project[] = [
     projectName: "POKEDEX TEAM ROCKET",
     description:
       "Challenge personnel - Découverte de React Native et TypeScript au travers d'un projet full stack.",
-    skills: ["REACT NATIVE", "EXPO","TYPESCRIPT", "NODE.JS","EXPRESS", "SQLITE"],
+    skills: [
+      "REACT NATIVE",
+      "EXPO",
+      "TYPESCRIPT",
+      "NODE.JS",
+      "EXPRESS",
+      "SQLITE",
+    ],
     links: [
       {
         githubHref: "https://github.com/Aur3liaP/PokedexCRUD-ReactNative",
@@ -134,7 +149,7 @@ export const projectData: Project[] = [
     projectName: "Chemin MONTESSORI",
     description:
       "Création d'un site esthétique pour un client désirant vendre des ateliers et gérer un blog sur le thème de l’éducation MONTESSORI (utilisateur+Admin).",
-    skills: ["REACT", "API", "NODE.JS", "EXPRESS","JWT", "MULTER", "MYSQL"],
+    skills: ["REACT", "API", "NODE.JS", "EXPRESS", "JWT", "MULTER", "MYSQL"],
     links: [
       {
         githubHref: "https://github.com/Aur3liaP/Chemin-Montessori",
@@ -145,5 +160,4 @@ export const projectData: Project[] = [
       src: "/projects/Montessori.png",
     },
   },
-
 ];

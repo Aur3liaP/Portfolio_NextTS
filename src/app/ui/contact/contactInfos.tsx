@@ -6,15 +6,15 @@ import ContactCapsule from "./contactCapsule";
 
 export default function ContactInfos() {
   const capsuleRef = useRef(null);
-const { slideInLeft } = useAnimation();
-    useGSAP(() => {
-      slideInLeft(capsuleRef.current);
+  const { slideInLeft } = useAnimation();
+  useGSAP(() => {
+    slideInLeft(capsuleRef.current);
   }, []);
 
-    return (
-      <div className="flex flex-col gap-8" ref={capsuleRef}>
-        <ContactCapsule type="mail"/>
-        <ContactCapsule type="tel"/>
-      </div>
-    );
-  }
+  return (
+    <div className="flex flex-col gap-8" ref={capsuleRef}>
+      <ContactCapsule type="mail" />
+      <ContactCapsule type="tel" />
+    </div>
+  );
+}

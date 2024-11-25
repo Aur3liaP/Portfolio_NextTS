@@ -4,7 +4,7 @@ export interface navLinks {
 }
 
 export const navLinks = [
-    { name: "Profil", href: "#profil" },
-    { name: "Projets", href: "#projets" },
-    { name: "Contact", href: "#contact" },
-  ];
+  { name: "Profil", href: "#profil" },
+  { name: "Projets", href: "#projets" },
+  { name: "Contact", href: "#contact" },
+];

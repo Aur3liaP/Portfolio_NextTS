@@ -3,39 +3,39 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Glass Antiqua';
-  src: url('./ui/fonts/GlassAntiqua-Regular.ttf') format('truetype');
+  font-family: "Glass Antiqua";
+  src: url("./ui/fonts/GlassAntiqua-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat Alternates';
-  src: url('./ui/fonts/MontserratAlternates-Light.ttf') format('truetype');
+  font-family: "Montserrat Alternates";
+  src: url("./ui/fonts/MontserratAlternates-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat Alternates';
-  src: url('./ui/fonts/MontserratAlternates-Regular.ttf') format('truetype');
-  font-weight: 500; 
+  font-family: "Montserrat Alternates";
+  src: url("./ui/fonts/MontserratAlternates-Regular.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./ui/fonts/Montserrat-Light.ttf') format('truetype');
-  font-weight: 300; 
+  font-family: "Montserrat";
+  src: url("./ui/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
 
 :root {
-  --background: #FBFAF8;
+  --background: #fbfaf8;
   --foreground: #171717;
-  --clr-yellow : #FFD25D;
-  --clr-light-purple : #DEC8FE ;
-  --clr-dark-purple : #704FE6 ;
+  --clr-yellow: #ffd25d;
+  --clr-light-purple: #dec8fe;
+  --clr-dark-purple: #704fe6;
   --default-font: "Montserrat Alternates", sans-serif;
   --font-title: "Glass Antiqua", cursive;
   --secondary-font: "Montserrat", sans-serif;

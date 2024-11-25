@@ -12,11 +12,11 @@ export default function Home() {
         <Navbar />
       </header>
       <main className="mt-[12vh] w-[90%] max-w-[1440px] mx-auto ">
-        <ScrollToTopButton/>
+        <ScrollToTopButton />
         <Hero />
-        <Profil/>
-        <Projects/>
-        <Contact/>
+        <Profil />
+        <Projects />
+        <Contact />
       </main>
       <footer className="mt-[10vh] flex flex-col justify-center items-center h-14 top-0 w-full shadow-sm bg-white">
         <p className="tracking-wider">Merci d'être arrivé(e) jusque-là !</p>

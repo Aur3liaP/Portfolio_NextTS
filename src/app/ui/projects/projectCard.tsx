@@ -60,12 +60,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </a>
 
         {project.links.some(
-          (link) => link.deployHref && link.deployHref !== "none"
+          (link) => link.deployHref && link.deployHref !== "none",
         ) && (
           <a
             href={
               project.links.find(
-                (link) => link.deployHref && link.deployHref !== "none"
+                (link) => link.deployHref && link.deployHref !== "none",
               )?.deployHref
             }
             target="_blank"

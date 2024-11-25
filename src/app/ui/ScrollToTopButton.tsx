@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
 import { useState, useEffect } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 
 function ScrollToTopButton() {
   const [showButton, setShowButton] = useState(false);
@@ -27,9 +27,12 @@ function ScrollToTopButton() {
   return (
     <div>
       {showButton && (
-        <div >
-          <button className="fixed bottom-4 right-4 z-50" onClick={handleScrollToTop}>
-          <Image
+        <div>
+          <button
+            className="fixed bottom-4 right-4 z-50"
+            onClick={handleScrollToTop}
+          >
+            <Image
               src="/svg/scrollTop.svg"
               alt="revenir en haut"
               width={55}
