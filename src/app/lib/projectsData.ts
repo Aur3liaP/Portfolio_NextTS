@@ -160,4 +160,22 @@ export const projectData: Project[] = [
       src: "/projects/Montessori.png",
     },
   },
+  {
+    id: 8,
+    title: "Projet Solo",
+    subtitle: "Autodidacte",
+    projectName: "Portfolio",
+    description:
+      "Création du portfolio que vous visionnez sur Next.js + déploiement via Vercel. Liaison nom de domaine OVH. Envoi de mail avec Resend.",
+    skills: ["TYPESCRIPT", "NEXT.JS", "VERCEL", "OVH", "RESEND"],
+    links: [
+      {
+        githubHref: "https://github.com/Aur3liaP/Portfolio_NextTS",
+        deployHref: "https://www.aureliapic.fr/",
+      },
+    ],
+    capture: {
+      src: "/projects/portfolio.png",
+    },
+  },
 ];
