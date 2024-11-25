@@ -19,7 +19,7 @@ export default function Projects() {
 
   return (
     <div ref={projetRef}>
-      <div className="flex items-center gap-[5%]">
+      <div className="flex items-center gap-[5%] overflow-hidden">
         <h3
           className="font-fontTitle text-4xl sm:text-6xl py-[15vh]"
           id="projets"

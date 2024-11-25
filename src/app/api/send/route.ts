@@ -3,8 +3,14 @@ import { Resend } from "resend";
 import { NextRequest } from "next/server";
 import * as React from "react";
 
+if (!process.env.RESEND_API_KEY) {
+  throw new Error("RESEND_API_KEY is not defined");
+}
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 const emailUser = process.env.EMAIL_USER as string;
+
+console.log("RESEND_API_KEY:", process.env.RESEND_API_KEY);
 
 export async function POST(req: NextRequest) {
   const { name, email, message } = await req.json();

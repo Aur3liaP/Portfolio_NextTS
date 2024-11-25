@@ -29,7 +29,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         alt={`Capture d'écran du projet ${project.projectName}`}
         width={270}
         height={145}
-        className="cursor-pointer h-[145px]"
+        className="cursor-pointer h-[130px]"
       />
 
       <div className="w-full font-light text-sm h-[35%]">
