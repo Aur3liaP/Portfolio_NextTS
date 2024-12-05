@@ -37,7 +37,7 @@ export default function Contact() {
           alt="ligne violette"
           width={60}
           height={40}
-          className="absolute translate-y-8 sm:translate-y-12 translate-x-[100%] sm:w-[100px]"
+          className="absolute translate-y-8 sm:translate-y-12 translate-x-full sm:w-[100px]"
         />
         <Image
           src="/svg/littlewhirl.svg"
@@ -54,7 +54,6 @@ export default function Contact() {
           alt="soleil"
           width={75}
           height={75}
-          className=""
         />
         <ContactForm />
       </div>

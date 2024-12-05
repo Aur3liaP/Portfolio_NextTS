@@ -37,7 +37,6 @@ export default function ProjectCarousel() {
     groupedProjects.push(reversedProjects.slice(i, i + groupSize));
   }
 
-  // Animation GSAP
   useGSAP(() => {
     if (carouselRef.current) {
       gsap.fromTo(
@@ -48,7 +47,6 @@ export default function ProjectCarousel() {
     }
   }, [currentGroupIndex]);
 
-  // Navigation
   const nextGroup = () =>
     setCurrentGroupIndex(
       (prevIndex) => (prevIndex + 1) % groupedProjects.length,
@@ -68,7 +66,7 @@ export default function ProjectCarousel() {
         {groupedProjects[currentGroupIndex].map((project) => (
           <div
             key={project.id}
-            className={`flex-shrink-0 flex justify-center w-full ${
+            className={`flex justify-center w-full ${
               isMobile ? "w-full" : isTablet ? "w-1/2" : "lg:w-1/3"
             }`}
           >
@@ -79,6 +77,7 @@ export default function ProjectCarousel() {
 
       <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
         <button
+          type="button"
           onClick={prevGroup}
           className="p-2 bg-clrlightpurple rounded-full shadow-md hover:bg-clryellow"
         >
@@ -87,6 +86,7 @@ export default function ProjectCarousel() {
       </div>
       <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
         <button
+          type="button"
           onClick={nextGroup}
           className="p-2 bg-clrlightpurple rounded-full shadow-md hover:bg-clryellow"
         >

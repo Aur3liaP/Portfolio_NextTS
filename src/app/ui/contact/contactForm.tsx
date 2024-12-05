@@ -7,8 +7,8 @@ export default function ContactForm() {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [borderClass, setBorderClass] = useState<string>("");
-  const [infoMessage, setInfoMessage] = useState<string>(""); // Message de feedback
-  const [infoType, setInfoType] = useState<"success" | "error" | "">(""); // Type de message
+  const [infoMessage, setInfoMessage] = useState<string>(""); 
+  const [infoType, setInfoType] = useState<"success" | "error" | "">("");
 
   const isValidEmail = (emailValidation: string): boolean => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -130,7 +130,7 @@ export default function ContactForm() {
 
         <div className="flex gap-4">
           <button
-            type="button"
+            type="reset"
             onClick={handleReset}
             className="px-4 py-2 text-gray-300"
           >
@@ -148,7 +148,7 @@ export default function ContactForm() {
 
       {infoMessage && (
         <div
-          className={`absolute top-[-80px] right-0 ${
+          className={`absolute -top-20 right-0 ${
             infoType === "success" ? "bg-green-500" : "bg-red-500"
           } text-white px-4 py-2 rounded shadow-lg transition-all duration-300`}
         >

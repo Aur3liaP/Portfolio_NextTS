@@ -35,7 +35,7 @@ export default function Profil() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button className="mx-auto my-[15vh] p-2.5 bg-[var(--clr-yellow)] rounded-lg text-3xl font-light flex items-center justify-center shadow hover:scale-105 duration-300">
+        <button type="button" className="mx-auto my-[15vh] p-2.5 bg-clryellow rounded-lg text-3xl font-light flex items-center justify-center shadow hover:scale-105 duration-300">
           Voir mon CV
         </button>
       </a>

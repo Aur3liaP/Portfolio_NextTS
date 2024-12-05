@@ -22,8 +22,8 @@ export default function Chronology() {
           <ChronologyZoom text={"👵\n1ère de réception\n2013-2024"} />
           <ChronologyZoom text={"🤵🏻‍♀️\nBAC Hôtellerie Restauration\n2011"} />
         </div>
-        <div className="h-[2px] min-w-[600px] md:min-w-[800px] bg-[var(--clr-dark-purple)] my-8"></div>
-        <div className="flex pl-[20%] xl:pl-0 gap-[25%] justify-start xl:justify-center">
+        <div className="h-[2px] min-w-[37.5rem] md:min-w-[50rem] bg-clrdarkpurple my-8"/>
+        <div className="flex pl-1/5 xl:pl-0 gap-[25%] justify-start xl:justify-center">
           <ChronologyZoom text={"✨🚀\nFormation Développeur Web\n2024"} />
           <ChronologyZoom
             text={"✈️\nBTS Ventes et productions touristiques\n2013"}

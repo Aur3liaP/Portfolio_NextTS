@@ -10,10 +10,11 @@ export default function Tags() {
 
     tags.forEach((tag, index) => {
       gsap.to(tag, {
-        y: "10px",
-        duration: 2.5,
+        y: "15px",
+        duration: 3,
         repeat: -1,
         delay: index * 0.5,
+        repeatDelay: 0,
         ease: "power1.inOut",
         force3D: true,
         yoyo: true,
@@ -30,13 +31,13 @@ export default function Tags() {
         height={266}
         className=""
       />
-      <div className="w-[125px] h-[40px] bg-[var(--clr-dark-purple)] rounded-full flex items-center justify-center text-white absolute -left-8 top-16 rotate-12 tag">
+      <div className="w-32 h-10 bg-clrdarkpurple rounded-full flex items-center justify-center text-white absolute -left-8 top-16 rotate-12 tag">
         <p className="font-fontTitle text-2xl">Positive</p>
       </div>
-      <div className="w-[125px] h-[40px] bg-[var(--clr-yellow)] rounded-full flex items-center justify-center absolute -right-10 top-12 -rotate-12 tag">
+      <div className="w-32 h-10 bg-clryellow rounded-full flex items-center justify-center absolute -right-10 top-12 -rotate-12 tag">
         <p className="font-fontTitle text-2xl">Collaborative</p>
       </div>
-      <div className="w-[125px] h-[40px] bg-[var(--clr-light-purple)] rounded-full flex items-center justify-center absolute right-8 bottom-6 tag">
+      <div className="w-32 h-10 bg-clrlightpurple rounded-full flex items-center justify-center absolute right-8 bottom-6 tag">
         <p className="font-fontTitle text-2xl">Adaptabilité</p>
       </div>
     </div>

@@ -26,16 +26,16 @@ export default function Navbar() {
         isScrolled ? "bg-white/60 backdrop-blur-sm" : "bg-white"
       }`}
     >
-      <p className="text-5xl font-fontTitle" onClick={handleNavigation}>
+      <button type="button" className="text-5xl font-fontTitle" onClick={handleNavigation}>
         AP
-      </p>
+      </button>
       <Menu />
-      <div className="md:flex space-x-16 pr-2 text-[var(--clr-dark-purple)] hidden">
-        {navLinks.map((link, index) => (
+      <div className="md:flex space-x-16 pr-2 text-clrdarkpurple hidden">
+        {navLinks.map((link) => (
           <a
-            key={index}
+            key={link.id}
             href={link.href}
-            className="hover:text-[var(--clr-yellow)] transition-colors duration-300 text-lg"
+            className="hover:text-clryellow transition-colors duration-300 text-lg"
           >
             {link.name}
           </a>
