@@ -18,7 +18,7 @@ export const bioLinks = [
   {
     name: "Mon CV",
     src: "/svg/CV.svg",
-    href: "https://drive.google.com/file/d/1zOnxW9qfDGMKeLblTGXNQ_pl1QSBS4Px/view",
+    href: "https://drive.google.com/file/d/1ariDGBi0tQqLquNjQ8m9t1dLPFGPspIP/view",
     width: 35,
     height: 35,
   },
