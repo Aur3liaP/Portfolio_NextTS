@@ -7,7 +7,7 @@ export default function Description() {
         <p className="">
           Après plus de 11 ans d&apos;expérience dans le tourisme et la relation
           client, je me réoriente vers le développement web, un domaine qui
-          m&apos;a toujours fascinée.
+          m&apos;a toujours fasciné.
         </p>
         <p>
           Je suis actuellement à l&apos;écoute de nouvelles opportunités en
