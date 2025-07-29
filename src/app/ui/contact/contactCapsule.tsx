@@ -1,7 +1,7 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 type ContactCapsuleProps = {
-  type: "mail" | "tel"; 
+  type: "mail" | "tel";
 };
 
 export default function ContactCapsule({ type }: ContactCapsuleProps) {
@@ -16,15 +16,17 @@ export default function ContactCapsule({ type }: ContactCapsuleProps) {
           className=""
         />
       </div>
-      <div className='w-[70%] flex justify-center'>
+      <div className="w-[70%] flex justify-center">
         {type === "mail" ? (
-            <a href="mailto:pic.aurelia@gmail.com">
-            <p className="pr-2 underline underline-offset-4 decoration-0">pic.aurelia@gmail.com</p>
-            </a>
+          <a href="mailto:pic.aurelia@gmail.com">
+            <p className="pr-2 underline underline-offset-4 decoration-0">
+              pic.aurelia@gmail.com
+            </p>
+          </a>
         ) : (
-            <a href="tel:+33648002444">
+          <a href="tel:+33648002444">
             <p className="self-center">06 48 00 24 44</p>
-            </a>
+          </a>
         )}
       </div>
     </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Project } from "../../lib/projectsData";
+import type { Project } from "../../lib/projectsData";
 
 interface ProjectCardProps {
   project: Project;
@@ -7,7 +7,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="border-2 border-clryellow rounded-md h-[600px] w-72 lg:w-80 flex-shrink-0 flex flex-col justify-between gap-4 py-2 px-4 items-center text-center relative">
+    <div className="border-2 border-clryellow rounded-md h-[37.5rem] w-72 lg:w-80 flex-shrink-0 flex flex-col justify-between gap-4 py-2 px-4 items-center text-center relative">
       <Image
         src="/svg/stars.svg"
         alt="étoiles"
@@ -29,7 +29,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         alt={`Capture d'écran du projet ${project.projectName}`}
         width={270}
         height={145}
-        className="cursor-pointer h-[145px]"
       />
 
       <div className="w-full font-light text-sm h-[35%]">
@@ -60,12 +59,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </a>
 
         {project.links.some(
-          (link) => link.deployHref && link.deployHref !== "none"
+          (link) => link.deployHref && link.deployHref !== "none",
         ) && (
           <a
             href={
               project.links.find(
-                (link) => link.deployHref && link.deployHref !== "none"
+                (link) => link.deployHref && link.deployHref !== "none",
               )?.deployHref
             }
             target="_blank"

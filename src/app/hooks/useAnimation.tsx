@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { gsap } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,9 +9,7 @@ if (typeof window !== "undefined") {
 }
 
 const useAnimation = () => {
-  type AnimationFunction = (
-    elem: string | Element | null,
-  ) => void;
+  type AnimationFunction = (elem: string | Element | null) => void;
 
   // const slideInTop: AnimationFunction = (elem) => {
   //   if (!elem) return;
@@ -55,7 +53,7 @@ const useAnimation = () => {
           end: "bottom center",
           markers: false,
         },
-      }
+      },
     );
   };
 
@@ -78,7 +76,7 @@ const useAnimation = () => {
           end: "bottom center",
           markers: false,
         },
-      }
+      },
     );
   };
 
@@ -99,7 +97,7 @@ const useAnimation = () => {
           end: "bottom center",
           markers: false,
         },
-      }
+      },
     );
   };
 
