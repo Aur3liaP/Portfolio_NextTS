@@ -18,7 +18,7 @@ export default function Chronology() {
     <div className="relative" ref={chronoRef}>
       <div className="overflow-x-auto overscroll-auto">
         <div className="flex gap-[20%] justify-start xl:justify-center">
-          <ChronologyZoom style="text-sm" text={"🖥️\nFormation Concepteur Dév. d'app.\n2025"} />
+          <ChronologyZoom text={"🖥️\nFormation Concepteur Dév. d'app.\n2025"} />
           <ChronologyZoom text={"👵\n1ère de réception\n2013-2024"} />
           <ChronologyZoom text={"🤵🏻‍♀️\nBAC Hôtellerie Restauration\n2011"} />
         </div>
