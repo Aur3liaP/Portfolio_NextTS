@@ -178,4 +178,22 @@ export const projectData: Project[] = [
       src: "/projects/portfolio.png",
     },
   },
+    {
+    id: 9,
+    title: "Projet de groupe",
+    subtitle: "Diginamic",
+    projectName: "VroomVroomCar",
+    description:
+      "Site de covoiturage d’entreprise : design Figma, BDD SQL & UML, full-stack Angular / Spring Boot, authentification JWT, tests (JUnit, Mockito, Cypress) et Docker avec CI Jenkins.",
+    skills: ["JAVA", "SPRING", "ANGULAR", "JWT", "TAILWIND", "MYSQL"],
+    links: [
+      {
+        githubHref: "https://github.com/orgs/Projet-Fil-Rouge-Groups-03/repositories",
+        deployHref: "none",
+      },
+    ],
+    capture: {
+      src: "/projects/VroomVroom.png",
+    },
+  },
 ];

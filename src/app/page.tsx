@@ -22,7 +22,7 @@ export default function Home() {
         <p className="tracking-wider">
           Merci d&apos;être arrivé(e) jusque-là !
         </p>
-        <p className="tracking-wider">© PIC Aurélia - 2024 - ❤️</p>
+        <p className="tracking-wider">© PIC Aurélia - 2024-2025 - ❤️</p>
       </footer>
     </div>
   );
