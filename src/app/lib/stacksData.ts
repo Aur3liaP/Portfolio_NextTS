@@ -20,6 +20,7 @@ export const backStacks: Stack[] = [
   { name: "MySQL", src: "/stacks/mysql-2.svg" },
   { name: "Java", src: "/stacks/java.svg" },
   { name: "Spring Boot", src: "/stacks/spring.svg" },
+  { name: "UML", src: "/stacks/UML.svg" },
 ];
 
 export const otherStacks: Stack[] = [
