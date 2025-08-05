@@ -202,12 +202,12 @@ export const projectData: Project[] = [
     subtitle: "Site vitrine",
     projectName: "GellyBlast",
     description:
-      "Site vitrine pour la société GellyBlast. Maquette sur Figma, développement en Next.js et Tailwind CSS. Déploiement prévu mais non encore publié.",
+      "Premier site vitrine professionnel, conçu sur Figma puis développé avec Next.js & Tailwind CSS. Déployé et optimisé pour le référencement.",
     skills: ["TYPESCRIPT", "NEXT.JS", "VERCEL", "RESEND"],
     links: [
       {
         githubHref: "https://github.com/Aur3liaP/gelly_blast",
-        deployHref: "none",
+        deployHref: "https://www.gellyblast.fr/",
       },
     ],
     capture: {
